@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "theatre_histories",
+  "info": {
+    "singularName": "theatre-history",
+    "pluralName": "theatre-histories",
+    "displayName": "Страница \"история театра\"",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "photos": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

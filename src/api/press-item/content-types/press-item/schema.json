@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "press_items",
+  "info": {
+    "singularName": "press-item",
+    "pluralName": "press-items",
+    "displayName": "Упоминания в прессе",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "publisher": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "play": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::play.play",
+      "inversedBy": "pressItems"
+    },
+    "person": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "press_items"
+    },
+    "linkOrPdf": {
+      "type": "dynamiczone",
+      "components": [
+        "press.external-link",
+        "press.pdf"
+      ],
+      "required": true
+    }
+  }
+}

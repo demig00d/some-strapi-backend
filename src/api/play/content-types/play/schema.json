@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plays",
+  "info": {
+    "singularName": "play",
+    "pluralName": "plays",
+    "displayName": "Спектакли",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 90
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "shows": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::show.show",
+      "mappedBy": "play"
+    },
+    "isPremiere": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isRental": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isPushkinCard": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "play"
+    },
+    "directors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other-people.director"
+    },
+    "durationStr": {
+      "type": "string"
+    },
+    "premiereDateStr": {
+      "type": "string"
+    },
+    "pressItems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::press-item.press-item",
+      "mappedBy": "play"
+    },
+    "roles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::play-role.play-role",
+      "mappedBy": "play"
+    },
+    "scene": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sczeny.sczeny",
+      "inversedBy": "plays"
+    },
+    "rank": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}

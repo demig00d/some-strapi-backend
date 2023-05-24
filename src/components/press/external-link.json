@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_press_external_links",
+  "info": {
+    "displayName": "externalLink"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

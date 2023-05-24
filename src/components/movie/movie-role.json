@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_movie_movie_roles",
+  "info": {
+    "displayName": "movieRole",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "movieTitle": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "string",
+      "regex": "^(19|20)\\d{2}($|-(19|20)\\d{2})"
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}

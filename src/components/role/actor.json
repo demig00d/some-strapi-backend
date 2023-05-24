@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_roles_actors",
+  "info": {
+    "displayName": "Actor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_romashka_award_romashka_awards",
+  "info": {
+    "displayName": "RomashkaAward"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true,
+      "regex": "20\\d{2}-20\\d{2}"
+    },
+    "winner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "romashka-winner.romshka-winner"
+    }
+  }
+}

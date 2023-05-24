@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "user_agreements",
+  "info": {
+    "singularName": "user-agreement",
+    "pluralName": "user-agreements",
+    "displayName": "Пользовательское соглашение"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pdf": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

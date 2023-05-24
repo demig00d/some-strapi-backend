@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "troupe_pages",
+  "info": {
+    "singularName": "troupe-page",
+    "pluralName": "troupe-pages",
+    "displayName": "Страница \"труппа\"",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "troupe_photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "director": {
+      "type": "component",
+      "repeatable": true,
+      "component": "director.director"
+    }
+  }
+}

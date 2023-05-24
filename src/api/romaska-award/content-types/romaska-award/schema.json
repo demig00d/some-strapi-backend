@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "romaska_awards",
+  "info": {
+    "singularName": "romaska-award",
+    "pluralName": "romaska-awards",
+    "displayName": "Лауреаты премии «Ромашка»",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "play": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::person.person",
+      "inversedBy": "romashka_awards"
+    },
+    "role_genetive": {
+      "type": "string",
+      "required": true
+    },
+    "season": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::season.season",
+      "inversedBy": "awards"
+    }
+  }
+}

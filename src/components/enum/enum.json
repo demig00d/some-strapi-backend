@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_enum_enums",
+  "info": {
+    "displayName": "enum"
+  },
+  "options": {},
+  "attributes": {
+    "enum": {
+      "type": "string"
+    }
+  }
+}

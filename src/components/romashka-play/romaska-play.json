@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_romashka_play_romaska_plays",
+  "info": {
+    "displayName": "RomaskaPlay",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "plays": {
+      "type": "component",
+      "repeatable": true,
+      "component": "romashka-winner.romshka-winner"
+    }
+  }
+}

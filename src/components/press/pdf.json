@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_press_pdfs",
+  "info": {
+    "displayName": "pdf"
+  },
+  "options": {},
+  "attributes": {
+    "pdf": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

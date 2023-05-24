@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sczenies",
+  "info": {
+    "singularName": "sczeny",
+    "pluralName": "sczenies",
+    "displayName": "Сцены",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "plays": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::play.play",
+      "mappedBy": "scene"
+    }
+  }
+}

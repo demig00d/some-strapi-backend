@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_press_link_or_people",
+  "info": {
+    "displayName": "linkOrPerson"
+  },
+  "options": {},
+  "attributes": {
+    "pdf": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

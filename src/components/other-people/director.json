@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_other_people_directors",
+  "info": {
+    "displayName": "Director"
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "person": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::person.person"
+    }
+  }
+}

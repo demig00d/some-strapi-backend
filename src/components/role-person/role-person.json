@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_role_person_role_people",
+  "info": {
+    "displayName": "RolePerson",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "actor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
+    }
+  }
+}

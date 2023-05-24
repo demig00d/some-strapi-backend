@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "scene_pages",
+  "info": {
+    "singularName": "scene-page",
+    "pluralName": "scene-pages",
+    "displayName": "Страница \"сцены\"",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bigScene": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scene-media.scene-media"
+    },
+    "smallScene": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scene-media.scene-media"
+    },
+    "childrenScene": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scene-media.scene-media"
+    }
+  }
+}

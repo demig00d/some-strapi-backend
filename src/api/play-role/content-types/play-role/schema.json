@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "play_roles",
+  "info": {
+    "singularName": "play-role",
+    "pluralName": "play-roles",
+    "displayName": "Роли",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roleTitle": {
+      "type": "string",
+      "required": true
+    },
+    "play": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::play.play",
+      "inversedBy": "roles"
+    },
+    "actors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "mappedBy": "play_roles"
+    }
+  }
+}

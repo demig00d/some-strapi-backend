@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "partners",
+  "info": {
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Страница \"партнеры\""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "partner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partner.partner"
+    }
+  }
+}

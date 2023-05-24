@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "persons",
+  "info": {
+    "singularName": "person",
+    "pluralName": "persons",
+    "displayName": "Люди",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isGuest": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "positions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::position.position",
+      "inversedBy": "people"
+    },
+    "press_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::press-item.press-item",
+      "mappedBy": "person"
+    },
+    "movies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "movie.movie-role"
+    },
+    "title": {
+      "type": "string",
+      "default": " ",
+      "required": true
+    },
+    "gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery.scena"
+    },
+    "romashka_awards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::romaska-award.romaska-award",
+      "mappedBy": "artist"
+    },
+    "play_roles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::play-role.play-role",
+      "inversedBy": "actors"
+    },
+    "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "rank": {
+      "type": "integer",
+      "default": 0,
+      "required": false
+    },
+    "merits": {
+      "type": "string",
+      "maxLength": 90
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_romashka_winner_romshka_winners",
+  "info": {
+    "displayName": "RomshkaWinner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "play": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "component",
+      "repeatable": true,
+      "component": "role-person.role-person"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docs_categories",
+  "info": {
+    "singularName": "docs-category",
+    "pluralName": "docs-categories",
+    "displayName": "Категория документа",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "docs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::doc.doc",
+      "mappedBy": "category"
+    }
+  }
+}

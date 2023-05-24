@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_scene_media_scene_medias",
+  "info": {
+    "displayName": "SceneMedia"
+  },
+  "options": {},
+  "attributes": {
+    "photos": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "docs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::doc.doc"
+    }
+  }
+}

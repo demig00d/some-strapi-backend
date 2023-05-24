@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_contact_contacts",
+  "info": {
+    "displayName": "contact",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "workHours": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "person": {
+      "type": "component",
+      "repeatable": true,
+      "component": "enum.enum"
+    },
+    "phone": {
+      "type": "component",
+      "repeatable": true,
+      "component": "enum.enum"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": true,
+      "component": "enum.enum"
+    }
+  }
+}

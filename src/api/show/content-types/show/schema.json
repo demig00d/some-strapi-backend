@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shows",
+  "info": {
+    "singularName": "show",
+    "pluralName": "shows",
+    "displayName": "Афиша",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "play": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::play.play",
+      "inversedBy": "shows"
+    },
+    "tickets_link": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "datetime": {
+      "type": "datetime",
+      "required": true
+    },
+    "roles": {
+      "type": "customField",
+      "customField": "plugin::role-select.role-select"
+    }
+  }
+}

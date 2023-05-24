@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "Комментарии",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "play": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::play.play",
+      "inversedBy": "comments"
+    },
+    "theaterAnswer": {
+      "type": "text"
+    }
+  }
+}

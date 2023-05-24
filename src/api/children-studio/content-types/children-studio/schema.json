@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "children_studios",
+  "info": {
+    "singularName": "children-studio",
+    "pluralName": "children-studios",
+    "displayName": "Страница \"детская студия\"",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "photos": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
